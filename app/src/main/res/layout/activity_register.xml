@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="25dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/android"
+            android:contentDescription="@string/android_icon" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/register_text_infomation"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/et_register_account"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="@string/et_account_hint"
+            android:layout_margin="15dp"
+            android:padding="8dp"
+            android:background="@drawable/bg_login_et"
+            android:inputType="text"
+            android:maxLines="1"
+            android:autofillHints="@string/et_account_hint"/>
+        <EditText
+            android:id="@+id/et_register_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="@string/et_password_hint"
+            android:layout_margin="15dp"
+            android:padding="8dp"
+            android:background="@drawable/bg_login_et"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:autofillHints="@string/et_password_hint"/>
+        <EditText
+            android:id="@+id/et_register_repassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="@string/et_repassword_hint"
+            android:layout_margin="15dp"
+            android:padding="8dp"
+            android:background="@drawable/bg_login_et"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:autofillHints="@string/et_repassword_hint"/>
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_text"
+            android:textColor="#fff"
+            android:textSize="21sp"
+            android:layout_margin="15dp"
+            android:background="@drawable/bg_login_btn"/>
+    </LinearLayout>
+
+</LinearLayout>

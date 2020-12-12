@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="6dp">
+        <ImageView
+            android:id="@+id/iv_item_rv_user"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/user_img1"
+            android:contentDescription="@string/todo_item_rv_iv" />
+        <TextView
+            android:id="@+id/tv_item_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="USERNAME"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv_item_article_kind"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:textColor="@color/snow4"
+            android:text="KIND"
+            android:gravity="center|end" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tv_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TITLE"
+            android:textColor="#000"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:gravity="start|center_vertical" />
+        <TextView
+            android:id="@+id/tv_item_content"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTENT"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:maxLines="3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp">
+        <TextView
+            android:id="@+id/tv_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="TIME"
+            android:textColor="@color/snow4"
+            android:gravity="center" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <ImageView
+                android:id="@+id/iv_item_like"
+                android:src="@mipmap/like"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/todo_rv_item_like"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
